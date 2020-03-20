@@ -1,7 +1,8 @@
-import { useState } from 'react';
+import { useEffect } from 'react';
+import { useLocalStorage } from './useLocalStorage'
 
 export function useDarkMode(initialValues) {
-    const[darkMode, setDarkMode] = useState('darkMode', initialValues);
+    const[darkMode, setDarkMode] = useLocalStorage('darkMode', initialValues);
 
     const toggleDarkMode = event => {
         event.preventDefault();
