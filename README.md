@@ -84,6 +84,8 @@ const [storedValue, setStoredValue] = useState(() => {
 
 - Now, let's return `storedValue` from this hook in an array:
 
+[x] Complete?
+
 ```js
 import { useState } from "react";
 
@@ -104,6 +106,8 @@ export const useLocalStorage = (key, initialValue) => {
   - Add `setValue` to the array that is being returned out of this hook
   - `setValue` should look something like this:
 
+  [x] Complete?
+
 ```js
 const setValue = value => {
   // Save state
@@ -114,6 +118,8 @@ const setValue = value => {
 ```
 
 We're going to use this inside our dark mode hook, but this can be used anywhere for any kind of localStorage needs you have in your apps. Custom hooks are so awesome!!
+
+[x] Complete?
 
 ## STEP 2 - useDarkMode
 
@@ -128,6 +134,8 @@ We're going to use this inside our dark mode hook, but this can be used anywhere
   - If it's false, remove the class from the `body` element. (If you don't quite remember how to do this from ages and ages ago, Google will be your friend here 😉)
   - We don't want this effect to run every time anything in the component changes, right? Think about what piece of data this hook depends on, and should be synced with, and add that in its dependency array.
 - Finally, we need to return something out of here so we can use this in our app. What do you think we'll need? We'll need to know if dark mode is enabled, right? And we'll need a setter function to toggle dark mode. Let's just forward the value and the setter that were returned out of the `useLocalStorage` call. Return those two values in an array as well.
+
+[x] Complete?
 
 ## STEP 3 - Using the hook in a component
 
