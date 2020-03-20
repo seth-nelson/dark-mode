@@ -47,7 +47,7 @@ Open your app and take a look around. The crypto currency data is being fetched 
 
 This is going to be a pretty cool hook. It will be used pretty much the same way as `useState`, but with a key and value passed into it - ie `const [name, setName] = useLocalStorage('name', 'Dustin')`. You can use `setName` to update the value of `name` on localStorage! Pretty cool, huh? Let's get to it!
 
-- [ ] Understood?
+- [x] Understood?
 
 - Create a new directory called `hooks`, and a new file in it called `useLocalStorage`.
 
